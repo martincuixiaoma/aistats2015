@@ -8,24 +8,26 @@ baseurl: "/aistats2015" # the subpath of your site, e.g. /blog/
 url: "http://www.aistats.org" # the base hostname & protocol for your site
 #twitter_username: aistat
 github_username:  aistats
-
+style: aistats
 
 author:
   name: AISTATS
 comments: false
 plugins:
+- jekyll-feed
+- jekyll-seo-tag
 - jekyll-remote-theme
 remote_theme: lawrennd/proceedings
+style: aistats
 
 ghub:
   edit: true
   repository: aistats2015
-banner:
-  image: resort.png
+banner: resort.png
 
 conference:
   draft: false # set to True if the programme is draft only.
-  logo: logo.jpg
+  image: lj-shores.jpg
   hide_tentative: true
   proceedings:
     url: http://proceedings.mlr.press/v38/
@@ -35,14 +37,50 @@ conference:
   venue_url: https://www3.hilton.com/en/hotels/california/hilton-san-diego-resort-and-spa-SANHIHF/index.html
   location: San Diego, California, USA
   full_name: Artificial Intelligence and Statistics
-  name: AISTATS
+  short_name: AISTATS
+  name: Artificial Intelligence and Statistics
   year: 2015
   instance: 18th
   styling: International Conference on
   dates:
   - 2015-05-09
   - 2015-05-12
-
+  chairs:
+  - type: Program Chairs
+    people:
+    - family: Lebanon
+      given: Guy
+      institute: LinkedIn
+      url: http://theanalysisofdata.com/gl/
+    - family: Vishwanathan
+      given: S V N
+      institute: University of California, Santa Cruz
+      url: https://www.soe.ucsc.edu/people/vishy
+  - type: Workflow Chair
+    people:
+    - family: Nassif
+      given: Houssam
+      institute: Amazon
+      url: http://pages.cs.wisc.edu/~hous21/
+  - type: Publicity Chair
+    people:
+    - family: Lee
+      given: Joonseok
+      url: http://www.cc.gatech.edu/~jlee716/
+      institute: Georgia Institute of Technology
+  - type: Publication Chair
+    people:
+    - family: Rao
+      given: Vinayak
+      url: http://www.stat.duke.edu/~var11/
+      institute: Purdue University
+  - type: Fundraising Chair
+    people:
+    - family: Weinberger
+      given: Kilian
+      url: http://www.cse.wustl.edu/~kilian/
+      institute: Washington University in St. Louis
+      
 # Build settings
 markdown: kramdown
 
