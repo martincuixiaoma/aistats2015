@@ -32,7 +32,7 @@ conference:
   proceedings:
     url: http://proceedings.mlr.press/v38/
     show: true
-  room: Room
+  room: 
   venue: Hilton San Diego Resort and Spa
   venue_url: https://www3.hilton.com/en/hotels/california/hilton-san-diego-resort-and-spa-SANHIHF/index.html
   location: San Diego, California, USA
